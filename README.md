@@ -1,35 +1,13 @@
-# AigonOne Firmware
+# AigonOne Firmware & Tools
 
-Pre-built firmware binaries for M5Stack Core2 devices.
+## m5stack/
 
-## Releases
+AigonOne firmware for M5Stack (M5 is the device/platform). Pre-built binaries for flashing to M5Stack Core2 devices. Includes ESP Web Tools compatible manifests for browser-based flashing.
 
-Each release folder contains:
+See [m5stack/README.md](m5stack/README.md)
 
-```
-m5stack/
-├── releases.txt              # Available versions (newest first)
-└── v0.2rc3-dev-045/
-    ├── manifest.json         # ESP Web Tools format (for flashing)
-    ├── release.json          # Metadata (version, date, sha256, etc.)
-    ├── bootloader.bin        # 0x1000
-    ├── partitions.bin        # 0x8000
-    ├── boot_app0.bin         # 0xe000
-    └── firmware.bin          # 0x10000
-```
+## aigon_cli/
 
-## Web Flash
+Command-line interface for the Aigon API. Standalone Python executable (no dependencies) for notetaker, file management, and encryption.
 
-Use the web flasher at [a1.aigon.ai/flash](https://a1.aigon.ai/flash)
-
-The `manifest.json` is compatible with [ESP Web Tools](https://esphome.github.io/esp-web-tools/).
-
-## Manual Flash
-
-```bash
-esptool.py --chip esp32 --port /dev/tty.usbserial-XXXXX \
-    write_flash 0x1000 bootloader.bin \
-                0x8000 partitions.bin \
-                0xe000 boot_app0.bin \
-                0x10000 firmware.bin
-```
+See [aigon_cli/README.md](aigon_cli/README.md)
