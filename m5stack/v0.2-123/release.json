@@ -1,0 +1,33 @@
+{
+  "product": "AigonOne",
+  "version": "0.2",
+  "build": 123,
+  "firmware_string": "AigonOne v0.2/123",
+  "date": "2025-12-16",
+  "parts": [
+    {
+      "path": "bootloader.bin",
+      "offset": 4096,
+      "size": 17536,
+      "sha256": "a23f2db3a09e9df581a397ade210cce2224b593f8ae563a28f75b5b9795f30b3"
+    },
+    {
+      "path": "partitions.bin",
+      "offset": 32768,
+      "size": 3072,
+      "sha256": "bd0f7954aca2ef7d925ee21aaa1f3dc8822d1d6ce5cbbd26a135e5886bfff6ce"
+    },
+    {
+      "path": "boot_app0.bin",
+      "offset": 57344,
+      "size": 8192,
+      "sha256": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+    },
+    {
+      "path": "firmware.bin",
+      "offset": 65536,
+      "size": 2178448,
+      "sha256": "4f7d9f127cfb0677b165257a970c248da8baeb562fa35ddeb6acbba098a503de"
+    }
+  ]
+}
