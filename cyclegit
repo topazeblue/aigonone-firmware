@@ -1,0 +1,5 @@
+git fetch --all
+git checkout main
+git pull
+git co dev
+git rebase main
